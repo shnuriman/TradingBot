@@ -2,7 +2,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Бот для заработка на криптовалютных биржах</title>
+    <title>Криптовалютный торговый бот</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="../../../assets/vendors/iconfonts/mdi/css/materialdesignicons.css">
     <link rel="stylesheet" href="../../../assets/vendors/css/vendor.addons.css">
@@ -29,12 +29,12 @@
             <img class="profile-img img-lg rounded-circle" src="../../../assets/images/profile/male/image_1.png" alt="profile image">
           </div>
           <div class="info-wrapper">
-            <p class="user-name">Alex Karelov&nbsp;</p>
+            <p class="user-name">Alex Karelov</p>
             <h6 class="display-income">$3,400,00</h6>
         </div>
       </div>
       <ul class="navigation-menu">
-        <li class="nav-category-divider">Главное меню&nbsp;</li>
+        <li class="nav-category-divider">Главное меню</li>
 		 <li>
           <a href="../../index.html">
             <span class="link-title">Статистика</span>
@@ -57,7 +57,7 @@
           <li>
             <a href="#">
               <span class="link-title">Личный кабинет</span>
-              <i class="mdi mdi mdi-settings link-icon"></i>
+              <i class="mdi mdi mdi-account link-icon"></i>
             </a>
           </li>
       </ul>
@@ -119,7 +119,7 @@
 								<option selected>Выберите ранее созданный API ключ</option> 
                                 <option value="1">API ключ ByBit</option>
                                 <option value="2">API ключ Binance</option>
-                                <option value="3"API ключ>Bitget</option>
+                                <option value="3">API ключ Bitget</option>
                               </select>
                             </div>
                           </div>
@@ -163,7 +163,7 @@
                               <label for="inputType1">Депозит, USDT</label>
                             </div>
                             <div class="col-md-9 showcase_content_area">
-							  <input type="text" class="form-control" id="inputType1" placeholder="Размер депозита, которым будет оперировать бот">
+							  <input type="text" class="form-control" id="inputType10" placeholder="Размер депозита, которым будет оперировать бот">
                             </div>
                           </div>
 
@@ -172,7 +172,7 @@
                               <label for="inputType1">Кредитное плечо</label>
                             </div>
                             <div class="col-md-9 showcase_content_area">
-							  <input type="text" class="form-control" id="inputType1" placeholder="Задайте кредитное плечо">
+							  <input type="text" class="form-control" id="inputType2" placeholder="Задайте кредитное плечо">
                             </div>
                           </div>
 							
@@ -181,16 +181,16 @@
                               <label for="inputType1">Перекрытие изменения цены, %</label>
                             </div>
                             <div class="col-md-9 showcase_content_area">
-                              <input type="text" class="form-control" id="inputType1" placeholder="Задает на сколько процентов сетка ордеров покроет изменение цены">
+                              <input type="text" class="form-control" id="inputType3" placeholder="Задает на сколько процентов сетка ордеров покроет изменение цены">
                             </div>
                           </div>
 							
 							<div class="form-group row showcase_row_area">
                             <div class="col-md-3 showcase_text_area">
-                              <label for="inputType1">Частичное выставление сетки</label>
+                              <label for="inputType1">Количество ордеров</label>
                             </div>
                             <div class="col-md-9 showcase_content_area">
-                              <input type="text" class="form-control" id="inputType1" placeholder="Укажите число одновременно активных лимитных ордеров">
+                              <input type="text" class="form-control" id="inputType4" placeholder="Укажите число одновременно активных лимитных ордеров">
                             </div>
                           </div>
 							
@@ -199,7 +199,7 @@
                               <label for="inputType1">Мартингейл, %</label>
                             </div>
                             <div class="col-md-9 showcase_content_area">
-                              <input type="text" class="form-control" id="inputType1" placeholder="Укажите процент мартингейла"> 
+                              <input type="text" class="form-control" id="inputType5" placeholder="Укажите процент мартингейла"> 
                             </div>
                           </div>
 							
@@ -208,7 +208,7 @@
                               <label for="inputType1">Логарифмическое распределение цен, %</label>
                             </div>
                             <div class="col-md-9 showcase_content_area">
-                              <input type="text" class="form-control" id="inputType1" placeholder="Укажите Выберите логарифмический коэффициент">
+                              <input type="text" class="form-control" id="inputType6" placeholder="Укажите логарифмический коэффициент">
                             </div>
                           </div>
 							
@@ -217,7 +217,7 @@
                               <label for="inputType1">Профит, %</label>
                             </div>
                             <div class="col-md-9 showcase_content_area">
-                              <input type="text" class="form-control" id="inputType1" placeholder="Задайте профит в процентах">
+                              <input type="text" class="form-control" id="inputType7" placeholder="Задайте профит в процентах">
                             </div>
                           </div>
 							
@@ -226,7 +226,7 @@
                               <label for="inputType1">Трейлинг стоп, %</label>
                             </div>
                             <div class="col-md-9 showcase_content_area">
-                              <input type="text" class="form-control" id="inputType1" placeholder="Укажите процент отклонения">
+                              <input type="text" class="form-control" id="inputType8" placeholder="Укажите процент отклонения">
                             </div>
                           </div>
 </div>
@@ -255,8 +255,7 @@
         <!-- partial -->
       </div>
       <!-- page content ends -->
-    </div>
-    <!--page body ends -->
+	  <!--page body ends -->
     <!-- SCRIPT LOADING START FORM HERE /////////////-->
     <!-- plugins:js -->
     <script src="../../../assets/vendors/js/core.js"></script>
